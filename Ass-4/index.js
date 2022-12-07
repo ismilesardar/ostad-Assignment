@@ -83,6 +83,8 @@ app.post('/uplode',fileUP, (req, res) => {
 
 /* <<<<<<<<<====**Dowenlode API**=====>>>>>>>>>>*/
 const Download_Local = './download/mern-(1)-1670392499654.png'
+
+//Dounlode GET API
 app.get('/download', (req,res) => {
     res.download(Download_Local,(error) => {
         if (!error) {
