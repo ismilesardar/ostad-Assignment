@@ -39,7 +39,7 @@ app.post('/prameter',(req,res)=>{
 /* <<<<<<<<<====**uplode file**=====>>>>>>>>>>*/
 const UPLODE_LOCAL = './uplode/';
 
-//define a dtroge
+//define a storage
 const storage = multer.diskStorage({
     destination:(req, file, callback)=>{
         callback(null, UPLODE_LOCAL);
