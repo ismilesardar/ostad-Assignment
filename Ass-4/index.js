@@ -100,7 +100,7 @@ app.get('/download', (req,res) => {
 app.use((err,req,res,next)=>{
     if (err) {
         if (err instanceof multer.MulterError) {
-            res.status(500).send('THere is an uplode error!');
+            res.status(500).send('There is an uplode error!');
         } else {
             res.status(500).send(err.message);
         }
